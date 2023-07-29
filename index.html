@@ -38,29 +38,12 @@
 
 
 
-                <form id="contactForm" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="top-right">
+                <form id="contactForm" action="#" method="post" data-success="Subscribed! Thank you!" data-toastr-position="top-right">
                     <!-- Email address input-->
                     <div class="row input-group-newsletter">
                         <div class="col"><input class="form-control" id="email" type="email" placeholder="Enter email address..." name="email" /></div>
                         <div class="col-auto"><button class="btn btn-primary" id="submitButton" type="submit">Notify Me!</button></div>
-                    </div>
-
-                    <!-- Submit message-->
-                    <div id="submitSuccessMessage">
-                        <div class="text-center mb-3 mt-2">
-                            <?php
-                            // Display the success or fail message (if present in the URL)
-                            if (isset($_GET['message'])) {
-                                if ($_GET['message'] === 'success') {
-                                    echo '<div class="fw-bolder">Form submission successful!</div>';
-                                } elseif ($_GET['message'] === 'fail') {
-                                    echo '<div class="fw-bolder" style="color: red;">Error sending message!</div>';
-                                }
-                            }
-                            ?>
-                        </div>
-                    </div>
-                    
+                    </div>        
                 </form>
             </div>
         </div>
